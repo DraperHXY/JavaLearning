@@ -1,4 +1,4 @@
-package com.draper.stack;
+package com.draper.collection.stack;
 
 public class LinkStack<T> {
 

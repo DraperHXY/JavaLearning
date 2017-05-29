@@ -1,5 +1,6 @@
-package com.draper.list;
+package com.draper.collection;
 
+import com.draper.collection.list.RandomList;
 import com.draper.test.RandomTestData;
 import org.junit.Test;
 

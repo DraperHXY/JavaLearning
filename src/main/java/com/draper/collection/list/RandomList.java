@@ -1,4 +1,4 @@
-package com.draper.list;
+package com.draper.collection.list;
 
 import java.util.ArrayList;
 import java.util.List;

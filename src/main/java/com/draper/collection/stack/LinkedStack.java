@@ -1,4 +1,4 @@
-  package com.draper.stack;
+  package com.draper.collection.stack;
 
 public class LinkedStack<T> {
     private static class Node<U > {

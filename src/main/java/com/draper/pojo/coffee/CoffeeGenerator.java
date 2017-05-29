@@ -1,10 +1,13 @@
 package com.draper.pojo.coffee;
 
-import com.draper.util.Generator;
+import com.draper.collection.Generator;
 
 import java.util.Iterator;
 import java.util.Random;
 
+/**
+ * 随机 Coffee
+ */
 public class CoffeeGenerator implements Generator<Coffee>, Iterable<Coffee> {
 
     private Class[] types = {Americano.class, Breve.class, Cappuccino.class, Latte.class, Mocha.class};

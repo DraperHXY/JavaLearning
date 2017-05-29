@@ -1,4 +1,4 @@
-package com.draper.stack;
+package com.draper.collection.stack;
 
 import com.draper.pojo.Student;
 import org.junit.Test;
