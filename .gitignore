@@ -45,3 +45,5 @@ crashlytics-build.properties
 fabric.properties
 
 /src/main/webapp
+/src/main/resources
+target/
