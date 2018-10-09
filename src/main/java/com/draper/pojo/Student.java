@@ -31,4 +31,8 @@ public class Student {
     public void setBornDate(Date bornDate) {
         this.bornDate = bornDate;
     }
+
+    public void study(){
+        System.out.println(id + " 正在学习");
+    }
 }

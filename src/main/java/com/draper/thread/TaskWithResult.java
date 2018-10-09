@@ -1,4 +1,4 @@
-package com.draper.Thread;
+package com.draper.thread;
 
 import java.util.ArrayList;
 import java.util.Random;

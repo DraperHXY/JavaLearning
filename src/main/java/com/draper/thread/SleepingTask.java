@@ -1,4 +1,4 @@
-package com.draper.Thread;
+package com.draper.thread;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

@@ -1,4 +1,4 @@
-package com.draper.Thread;
+package com.draper.thread;
 
 import java.util.Random;
 import java.util.concurrent.Callable;

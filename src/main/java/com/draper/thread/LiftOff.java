@@ -1,4 +1,4 @@
-package com.draper.Thread;
+package com.draper.thread;
 
 /**
  * Created by Draper_HXY 03/06/2018 5:14 PM
