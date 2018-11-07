@@ -1,0 +1,31 @@
+@startuml
+
+interface Iterator
+interface ListIterator
+interface Collection
+interface List
+interface Set
+abstract class AbstractList
+abstract class AbstractCollection
+abstract class AbstractSet
+
+
+Iterator <.. Collection:依赖
+
+Collection <|-- List
+Collection <|-- Set
+
+
+
+Collection <|.. AbstractCollection
+List <|.. AbstractList
+Set <|.. AbstractSet
+
+AbstractCollection <-- AbstractList
+AbstractCollection <-- AbstractSet
+
+
+Iterator <|-- ListIterator
+
+ListIterator <.. List
+@enduml
