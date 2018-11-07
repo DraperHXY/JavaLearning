@@ -1,7 +1,6 @@
 package com.draper.collection.list;
 
 import com.draper.pojo.coffee.*;
-import com.sun.istack.internal.NotNull;
 
 import java.util.Iterator;
 
