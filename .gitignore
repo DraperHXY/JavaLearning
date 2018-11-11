@@ -47,3 +47,5 @@ fabric.properties
 /src/main/webapp
 /src/main/resources
 target/
+
+*.puml
