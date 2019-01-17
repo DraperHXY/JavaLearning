@@ -20,20 +20,24 @@ public class FileChannelTest {
             // 从 channel 中的数据读取到 buffer
             data = channel.read(byteBuffers);
 
-            System.out.println("read:" + data);
-            System.out.println(i++);
+            // 这个循环的原因是如果文件大于 48bytes，那么一个 byteBuffers 是不够的
+            // 所以在读取到 buffer 最后一个，channel 将继续将流读到 buffer 中，先前的 buffer 就被 clear 了
+            while (data != -1) {
+                System.out.println("read:" + data);
+                System.out.println(i++);
 
-            // 翻转 buffer，因为当执行完 channel.read(byteBuffer) 后， position 到最后一个
-            byteBuffers.flip();
+                // 翻转 buffer，因为当执行完 channel.read(byteBuffer) 后， position 到最后一个
+                byteBuffers.flip();
 
 
-            // hasRemaining 是指 position 和 limit 中间是否有还有其他的 byte，如果有则继续读取
-            while (byteBuffers.hasRemaining()) {
-                // 因为这是 ByteBuffer 所以对于 utf-8 需要两个字节的汉字会是乱码
-                System.out.println((char) byteBuffers.get());
+                // hasRemaining 是指 position 和 limit 中间是否有还有其他的 byte，如果有则继续读取
+                while (byteBuffers.hasRemaining()) {
+                    // 因为这是 ByteBuffer 所以对于 utf-8 需要两个字节的汉字会是乱码
+                    System.out.println((char) byteBuffers.get());
+                }
+
+                byteBuffers.clear();
             }
-
-            byteBuffers.clear();
         } finally {
             // 调用 raf.close() 后其中的 channel 也会被 close
             raf.close();
