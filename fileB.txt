@@ -1,0 +1,23 @@
+@Test
+    //文件流范例，打开一个文件的输入流，读取到字节数组，再写入另一个文件的输出流
+    public void test1() {
+        try {
+            FileInputStream fileInputStream = new FileInputStream(new File("a.txt"));
+            FileOutputStream fileOutputStream = new FileOutputStream(new File("b.txt"));
+            byte []buffer = new byte[128];
+            while (fileInputStream.read(buffer) != -1) {
+                fileOutputStream.write(buffer);
+            }
+            //随机读写，通过mode参数来决定读或者写
+            RandomAccessFile randomAccessFile = new RandomAccessFile(new File("c.txt"), "rw");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+作者：程序员江湖
+链接：https://www.jianshu.com/p/95449476ebf0
+來源：简书
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。49476ebf0
