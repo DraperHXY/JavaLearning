@@ -26,12 +26,16 @@ public class FileChannelTest {
             // 翻转 buffer，因为当执行完 channel.read(byteBuffer) 后， position 到最后一个
             byteBuffers.flip();
 
+
+            // hasRemaining 是指 position 和 limit 中间是否有还有其他的 byte，如果有则继续读取
             while (byteBuffers.hasRemaining()) {
+                // 因为这是 ByteBuffer 所以对于 utf-8 需要两个字节的汉字会是乱码
                 System.out.println((char) byteBuffers.get());
             }
 
             byteBuffers.clear();
         } finally {
+            // 调用 raf.close() 后其中的 channel 也会被 close
             raf.close();
         }
 
