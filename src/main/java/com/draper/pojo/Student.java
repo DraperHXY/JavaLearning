@@ -5,9 +5,21 @@ import java.util.Date;
 
 public class Student implements Serializable {
 
-    private int id;
+    private static final long serialVersionUID = 1l;
+
+    private transient int id;
     private String name;
     private Date bornDate;
+
+    public long getAge() {
+        return age;
+    }
+
+    public void setAge(long age) {
+        this.age = age;
+    }
+
+    private long age;
 
     public int getId() {
         return id;

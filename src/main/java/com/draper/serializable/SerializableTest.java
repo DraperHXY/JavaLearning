@@ -2,14 +2,12 @@ package com.draper.serializable;
 
 import com.draper.pojo.Student;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.Calendar;
-import java.util.Date;
+import java.io.*;
+import java.util.*;
 
 public class SerializableTest {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
         Student student = new Student();
         student.setName("小米");
 
@@ -17,22 +15,17 @@ public class SerializableTest {
         calendar.set(1997,6,23);
         student.setBornDate(calendar.getTime());
 
-        student.setId(1);
+        student.setId(11);
 
-        OutputStream out = new OutputStream() {
-            @Override
-            public void write(int b) throws IOException {
+//        ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("fileC.txt"));
+//        out.writeObject(student);
 
-            }
-        };
-
-
-
+        ObjectInputStream in = new ObjectInputStream(new FileInputStream("fileC.txt"));
+        Student student1 = (Student) in.readObject();
+        System.out.println(student1.getName());
+        System.out.println(student1.getAge());
+        System.out.println(student1.getId());
 
     }
-
-
-
-
 
 }
