@@ -12,7 +12,7 @@ public class SerializableTest {
         student.setName("小米");
 
         Calendar calendar = new Calendar.Builder().build();
-        calendar.set(1997,6,23);
+        calendar.set(1997, 6, 23);
         student.setBornDate(calendar.getTime());
 
         student.setId(11);
