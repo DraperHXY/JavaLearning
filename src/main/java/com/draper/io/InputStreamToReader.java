@@ -11,6 +11,12 @@ public class InputStreamToReader {
         while ((data = reader.read()) != -1) {
             System.out.print((char) data);
         }
+        reader.close();
+        Reader reader2 = new InputStreamReader(inputStream);
+        int data2;
+        while ((data2 = reader2.read()) != -1) {
+            System.out.print((char) data2);
+        }
     }
 
 }
