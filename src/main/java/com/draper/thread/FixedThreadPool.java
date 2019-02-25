@@ -10,6 +10,8 @@ import java.util.concurrent.Executors;
 public class FixedThreadPool {
 
     public static void main(String[] args) {
+
+        // newFixedThreadPool 作为一个定长线程池，可以控制最大并发量，超出的数量则等待。
         ExecutorService exec = Executors.newFixedThreadPool(5);
 
         for (int i = 0; i < 5; i++) {
@@ -17,4 +19,5 @@ public class FixedThreadPool {
         }
         exec.shutdown();
     }
+
 }
