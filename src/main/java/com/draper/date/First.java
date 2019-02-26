@@ -20,16 +20,16 @@ public class First {
         System.out.println(timestamp.getTime());
 
         Instant instant = Instant.now();
-        System.out.println(instant);
+        System.out.println("Instant.now() = " + instant);
 
-        Date someDate = new Date();
-        System.out.println("someDate = " + someDate);
+        Date someDate = new Date("2019/11/5");
+        System.out.println("new Date() = " + someDate);
 
         Instant someInstant = someDate.toInstant();
-        System.out.println("someInstant = " + someInstant);
+        System.out.println("new Date().toInstant() = " + someInstant);
 
         someInstant = Instant.ofEpochMilli(someDate.getTime());
-        System.out.println("someInstant = " + someInstant);
+        System.out.println("Instant.ofEpochMilli = " + someInstant);
 
         Calendar.Builder calendarBuilder = new Calendar.Builder();
         Calendar calendar = calendarBuilder.build();
@@ -44,7 +44,7 @@ public class First {
         System.out.println(calendar.get(Calendar.SECOND));
         System.out.println(calendar.get(Calendar.MILLISECOND));
 
-        SimpleDateFormat format = new SimpleDateFormat("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
+        SimpleDateFormat format = new SimpleDateFormat("E yy.M.dd 'at' hh:mm:ss a zzz");
         System.out.println(format.format(someDate));
 
         LocalDate localDate = LocalDate.now();
