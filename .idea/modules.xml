@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Socket/Chapter1/Chapter1.iml" filepath="$PROJECT_DIR$/Socket/Chapter1/Chapter1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Socket/Chapter1/Client/Client.iml" filepath="$PROJECT_DIR$/Socket/Chapter1/Client/Client.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLearning.iml" filepath="$PROJECT_DIR$/JavaLearning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Socket/Chapter1/Server/Server.iml" filepath="$PROJECT_DIR$/Socket/Chapter1/Server/Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Socket/Socket.iml" filepath="$PROJECT_DIR$/Socket/Socket.iml" />
       <module fileurl="file://$PROJECT_DIR$/Thread/Thread.iml" filepath="$PROJECT_DIR$/Thread/Thread.iml" />
     </modules>
   </component>
