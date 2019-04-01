@@ -8,6 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/Socket/Chapter1/Server/Server.iml" filepath="$PROJECT_DIR$/Socket/Chapter1/Server/Server.iml" />
       <module fileurl="file://$PROJECT_DIR$/Socket/Socket.iml" filepath="$PROJECT_DIR$/Socket/Socket.iml" />
       <module fileurl="file://$PROJECT_DIR$/Thread/Thread.iml" filepath="$PROJECT_DIR$/Thread/Thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thread/t1/t1.iml" filepath="$PROJECT_DIR$/Thread/t1/t1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thread/t19/t19.iml" filepath="$PROJECT_DIR$/Thread/t19/t19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thread/t20/t20.iml" filepath="$PROJECT_DIR$/Thread/t20/t20.iml" />
     </modules>
   </component>
 </project>
