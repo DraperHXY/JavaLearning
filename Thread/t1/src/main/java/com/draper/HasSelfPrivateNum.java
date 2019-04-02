@@ -5,8 +5,9 @@ package com.draper;
  */
 public class HasSelfPrivateNum {
 
+    int num = 0;
+
     public void addI(String username) {
-        int num = 0;
         try {
             if (username.equals("a")) {
                 num = 100;
