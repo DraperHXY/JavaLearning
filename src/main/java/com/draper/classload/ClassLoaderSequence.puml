@@ -1,9 +1,0 @@
-@startuml
-Son -> Object: 先行调用 Object 构造函数
-Father <- Object: 调用父类构造函数
-Son <- Father: 调用子类的构造函数
-Father --> Father: 初始化 Father 的成员变量
-Son --> Son: 初始化 Son 的成员变量
-
-
-@enduml
