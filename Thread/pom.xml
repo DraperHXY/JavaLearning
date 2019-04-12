@@ -20,6 +20,7 @@
         <module>t2-3-1</module>
         <module>WaitNotify</module>
         <module>p_r_test</module>
+        <module>p_r_stack</module>
     </modules>
 
 
