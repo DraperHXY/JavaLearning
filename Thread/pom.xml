@@ -22,6 +22,7 @@
         <module>p_r_test</module>
         <module>p_r_stack</module>
         <module>JoinRelease</module>
+        <module>JoinMoreTest</module>
     </modules>
 
 
