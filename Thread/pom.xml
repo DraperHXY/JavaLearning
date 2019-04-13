@@ -21,6 +21,7 @@
         <module>WaitNotify</module>
         <module>p_r_test</module>
         <module>p_r_stack</module>
+        <module>JoinRelease</module>
     </modules>
 
 
