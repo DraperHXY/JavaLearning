@@ -23,6 +23,7 @@
         <module>p_r_stack</module>
         <module>JoinRelease</module>
         <module>JoinMoreTest</module>
+        <module>ThreadLocalFirst</module>
     </modules>
 
 
