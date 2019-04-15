@@ -24,6 +24,7 @@
         <module>JoinRelease</module>
         <module>JoinMoreTest</module>
         <module>ThreadLocalFirst</module>
+        <module>ThreadLocalSource</module>
     </modules>
 
 
