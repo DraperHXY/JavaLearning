@@ -25,6 +25,8 @@
         <module>JoinMoreTest</module>
         <module>ThreadLocalFirst</module>
         <module>ThreadLocalSource</module>
+        <module>Lock</module>
+        <module>Lock</module>
     </modules>
 
 
