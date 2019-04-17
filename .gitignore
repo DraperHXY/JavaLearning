@@ -51,6 +51,4 @@ target/
 *.puml
 .idea
 
-*/*.iml
-
-Thread/*/*.iml
+**/*.iml
