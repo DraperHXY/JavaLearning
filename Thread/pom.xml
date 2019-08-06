@@ -27,6 +27,8 @@
         <module>ThreadLocalSource</module>
         <module>Lock</module>
         <module>Lock</module>
+        <module>ThreadPool</module>
+        <module>ForkJoin</module>
     </modules>
 
 
