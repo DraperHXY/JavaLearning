@@ -29,6 +29,7 @@
         <module>Lock</module>
         <module>ThreadPool</module>
         <module>ForkJoin</module>
+        <module>CompletionService</module>
     </modules>
 
 
