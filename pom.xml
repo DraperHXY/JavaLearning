@@ -8,6 +8,7 @@
     <modules>
         <module>Thread</module>
         <module>Socket</module>
+        <module>JVM</module>
     </modules>
     <name>JavaLearning Maven Webapp</name>
     <url>http://maven.apache.org</url>
